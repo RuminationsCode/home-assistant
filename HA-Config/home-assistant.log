@@ -1,0 +1,65 @@
+2018-10-14 06:01:05 WARNING (Recorder) [homeassistant.components.recorder.migration] Database requires upgrade. Schema version: None
+2018-10-14 06:01:20 WARNING (SyncWorker_6) [plexapi] BadRequest (401) unauthorized http://10.1.1.14:32400/; <html><head><script>window.location = window.location.href.match(/(^.+\/)[^\/]*$/)[1] + 'web/index.html';</script><title>Unauthorized</title></head><body><h1>401 Unauthorized</h1></body></html>
+2018-10-14 06:29:30 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/app/homeassistant/helpers/service.py", line 226, in _handle_service_platform_call
+    await func(entity, data)
+  File "/usr/local/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/app/homeassistant/components/media_player/plex.py", line 679, in set_volume_level
+    int(volume * 100), self._active_media_plexapi_type)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 402, in setVolume
+    self.setParameters(volume=volume, mtype=mtype)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 487, in setParameters
+    self.sendCommand('playback/setParameters', **params)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 195, in sendCommand
+    return self.query(key, headers=headers)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 167, in query
+    return ElementTree.fromstring(data) if data.strip() else None
+  File "/usr/local/lib/python3.6/xml/etree/ElementTree.py", line 1314, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2018-10-14 06:29:35 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/app/homeassistant/helpers/service.py", line 226, in _handle_service_platform_call
+    await func(entity, data)
+  File "/usr/local/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/app/homeassistant/components/media_player/plex.py", line 679, in set_volume_level
+    int(volume * 100), self._active_media_plexapi_type)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 402, in setVolume
+    self.setParameters(volume=volume, mtype=mtype)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 487, in setParameters
+    self.sendCommand('playback/setParameters', **params)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 195, in sendCommand
+    return self.query(key, headers=headers)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 167, in query
+    return ElementTree.fromstring(data) if data.strip() else None
+  File "/usr/local/lib/python3.6/xml/etree/ElementTree.py", line 1314, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2018-10-14 06:29:38 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/app/homeassistant/helpers/service.py", line 226, in _handle_service_platform_call
+    await func(entity, data)
+  File "/usr/local/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/app/homeassistant/components/media_player/plex.py", line 679, in set_volume_level
+    int(volume * 100), self._active_media_plexapi_type)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 402, in setVolume
+    self.setParameters(volume=volume, mtype=mtype)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 487, in setParameters
+    self.sendCommand('playback/setParameters', **params)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 195, in sendCommand
+    return self.query(key, headers=headers)
+  File "/usr/local/lib/python3.6/site-packages/plexapi/client.py", line 167, in query
+    return ElementTree.fromstring(data) if data.strip() else None
+  File "/usr/local/lib/python3.6/xml/etree/ElementTree.py", line 1314, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2018-10-14 06:32:13 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-14 07:01:08 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-14 07:01:10 ERROR (MainThread) [homeassistant.components.updater] Got unexpected response: None
